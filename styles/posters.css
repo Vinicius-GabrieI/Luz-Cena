@@ -1,0 +1,4 @@
+.posters {
+    width: var(--max-width-block);
+    margin: 80px auto 160px auto;
+}

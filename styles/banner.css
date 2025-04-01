@@ -1,0 +1,74 @@
+.banner {
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    background-image: url(../images/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner__container {
+    max-width: var(--max-width-block);
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.banner__title {
+    font-size: var(--font-size-xxl);
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    line-height: 1.2em;
+    color: var(--cor-texto-claro);
+    width: 50%;
+}
+
+.banner__title span {
+    font-size: var(--font-size-xxl);
+    font-weight: 400;
+    color: var(--cor-texto-destaque);
+}
+
+@media screen and (max-width: 1200px) {
+    .banner {
+        height: 40vh;
+        padding-left: 10vw;
+        background-image: url(../images/Banner-Tablet.png);
+        background-size: cover;
+    }
+
+    .banner__title {
+        font-size: var(--font-size-xl);
+        line-height: 1.2em;
+    }
+
+    .banner__title span {
+        font-size: var(--font-size-xl);
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .banner__title {
+        width: 70%;
+        font-size: 2.5rem;
+    }
+
+    .banner__title span {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .banner__title {
+        font-size: 2rem;
+    }
+
+    .banner__title span {
+        font-size: 2rem;
+    }
+
+    .banner {
+        background-image: url(../images/Banner-Mobile.png);
+        background-size: cover;
+    }
+}

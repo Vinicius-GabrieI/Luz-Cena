@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -31,15 +31,15 @@
           </h1>
         </li>
 
-        <li class="header__item">
+        <li class="header__item header__item--disabled">
           <a href="#" class="header__link">Eventos</a>
         </li>
 
-        <li class="header__item">
+        <li class="header__item header__item--disabled">
           <a href="#" class="header__link">Club Fidelidade</a>
         </li>
 
-        <li class="header__item">
+        <li class="header__item header__item--disabled">
           <a href="#" class="header__link">Sobre nós</a>
         </li>
 
@@ -68,8 +68,180 @@
     </div>
   </section>
 
-  <section class="posters">
+  <section class="poster">
+    <ul class="poster__list" role="tablist" aria-label="Navegação de categorias">
+      <li class="poster__item poster__item--active" role="tab" aria-selected="true">
+        Em cartaz
+      </li>
 
+      <li class="poster__item" role="tab">
+        Em breve
+      </li>
+    </ul>
+
+    <form>
+      <input type="search" placeholder="Digite sua busca" class="poster__search"
+        aria-label="Campo para busca de filmes">
+    </form>
+
+    <h2 class="poster__title">Em cartaz</h2>
+
+    <section class="poster__movies">
+      <ul class="poster__movie-list">
+        <li class="poster__movie">
+          <img src="./images/poster/amigoDaSombra.png" alt="Poster de 'Amigo da Sombra'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">Amigo da Sombra</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Suspense</p>
+                <p class="poster__movie-dimension">2D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">110 Minutos</p>
+                <p class="poster__movie-age">12 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="poster__movie">
+          <img src="./images/poster/amanhecer.png" alt="Poster de 'Amanhecer'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">Amanhecer</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Romance</p>
+                <p class="poster__movie-dimension">2D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">90 Minutos</p>
+                <p class="poster__movie-age--general">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="poster__movie">
+          <img src="./images/poster/amigosDoBosque.png" alt="Poster de 'Amigos do Bosque Mágico'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">Amigos do Bosque Mágico</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Animação</p>
+                <p class="poster__movie-dimension">2D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">80 minutos</p>
+                <p class="poster__movie-age--general">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="poster__movie">
+          <img src="./images/poster/caminhoParaOAbismo.png" alt="Poster de 'Caminho para o Abismo'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">Caminho para o Abismo</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Horror</p>
+                <p class="poster__movie-dimension">2D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">103 Minutos</p>
+                <p class="poster__movie-age">14 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="poster__movie">
+          <img src="./images/poster/desastresDoEscritorio.png" alt="Poster de 'Desastres do Escritório'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">Desastres do Escritório</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Comédia</p>
+                <p class="poster__movie-dimension">2D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">85 Minutos</p>
+                <p class="poster__movie-age--general">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="poster__movie">
+          <img src="./images/poster/mestresDoFuturo.png"
+            alt="Poster de 'Mestres do Futuro: Tecnologias que mudam o mundo'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">Mestres do Futuro: Tecnologias que mudam o mundo</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Documentário</p>
+                <p class="poster__movie-dimension">2D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">120 Minutos</p>
+                <p class="poster__movie-age--general">Livre</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="poster__movie">
+          <img src="./images/poster/laEsperanza.png" alt="Poster de 'La Esperanza'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">La Esperanza</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Drama</p>
+                <p class="poster__movie-dimension">2D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">98 Minutos</p>
+                <p class="poster__movie-age">12 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="poster__movie">
+          <img src="./images/poster/oNexusDoTempo.png" alt="Poster de 'O Nexus do Tempo'">
+          <div class="poster__container">
+            <h3 class="poster__movie-title">O Nexus do Tempo</h3>
+
+            <div class="poster__movie-description">
+              <div class="poster__movie-row">
+                <p class="poster__movie-type">Ficção Científica</p>
+                <p class="poster__movie-dimension">3D</p>
+              </div>
+
+              <div class="poster__movie-row">
+                <p class="poster__movie-duration">105 Minutos</p>
+                <p class="poster__movie-age">10 anos</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
   </section>
 </body>
 

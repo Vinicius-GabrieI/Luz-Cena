@@ -1,0 +1,59 @@
+.poster__movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-m);
+    justify-content: center;
+    list-style-type: none;
+    font-family: var(--fonte-texto);
+}
+
+.poster__movie {
+    width: 282px;
+    display: flex;
+    flex-direction: column;
+}
+
+.poster__container {
+    height: 200px;
+    padding: var(--padding-s);
+    box-shadow: var(--box-shadow-card);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster__movie-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.poster__movie-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.poster__movie-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster__movie-dimension {
+    padding: 2px var(--padding-xs);
+    background-color: var(--cor-de-fundo-faixa-etaria);
+    border: none;
+    border-radius: 4px;
+}
+
+.poster__movie-age {
+    padding: 2px var(--padding-xs);
+    background-color: var(--cor-faixa-etaria);
+    border: none;
+    border-radius: 4px;
+}
+
+.poster__movie-age--general {
+    padding: 2px var(--padding-xs);
+    background-color: var(--cor-faixa-etaria-livre);
+    border: none;
+    border-radius: 4px;
+}

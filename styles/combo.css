@@ -1,0 +1,21 @@
+.combo {
+    padding: 80px clamp(60px, 18vw, 360px);
+    background-image: url(../images/Banner-Pipoca.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.combo__title,
+.combo__title--highlighted {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(31px, 6vw ,76px);
+    font-weight: 400;
+    color: var(--cor-texto-claro);
+    width: 30%;
+    line-height: 120%;
+}
+
+.combo__title--highlighted {
+    color: var(--cor-texto-destaque);
+}

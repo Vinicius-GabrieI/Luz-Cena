@@ -1,6 +1,6 @@
 .poster {
     padding: 0 15vw;
-    margin: 5rem auto 10rem;
+    margin: clamp(2.5rem, 4.15vw, 5rem) auto clamp(5rem, 8.3vw, 10rem);
 }
 
 .poster__list {

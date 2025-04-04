@@ -55,6 +55,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .banner__container {
+        padding-left: 21px;
+    }
+
     .banner__title,
     .banner__title--highlighted {
         font-size: 2rem;

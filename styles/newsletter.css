@@ -1,0 +1,44 @@
+.newsletter {
+    padding: 80px clamp(24px, 12vw, 360px);
+    text-align: center;
+    background-color: var(--cor-de-fundo-newsletter);
+}
+
+.newsletter__title {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(20px, 3vw, 31px);
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.newsletter__form {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.newsletter__input {
+    width: clamp(312px, 35vw, 678px);
+    height: 51px;
+    padding: 0 16px;
+    background-color: transparent;
+    border: 2px solid var(--cor-de-fundo-footer);
+    border-radius: 8px;
+    font-family: var(--fonte-texto);
+}
+
+.newsletter__input::placeholder {
+    font-family: var(--fonte-texto);
+    color: var(--cor-de-fundo-footer);
+}
+
+.newsletter__button {
+    padding: var(--padding-s);
+    background-color: var(--cor-de-fundo-footer);
+    color: var(--cor-de-fundo-input);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}

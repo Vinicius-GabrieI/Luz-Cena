@@ -8,10 +8,12 @@
     font-family: var(--fonte-titulo);
     font-size: clamp(20px, 3vw, 31px);
     font-weight: 400;
+    line-height: 1.2em;
     margin-bottom: 32px;
 }
 
 .newsletter__form {
+    height: 51px;
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
@@ -20,12 +22,17 @@
 
 .newsletter__input {
     width: clamp(312px, 35vw, 678px);
-    height: 51px;
+    height: 100%;
     padding: 0 16px;
     background-color: transparent;
-    border: 2px solid var(--cor-de-fundo-footer);
+    border: 2px solid #494949;
     border-radius: 8px;
     font-family: var(--fonte-texto);
+}
+
+.newsletter__input:focus {
+    border-color: #000000;
+    outline: none;
 }
 
 .newsletter__input::placeholder {
@@ -34,11 +41,13 @@
 }
 
 .newsletter__button {
-    padding: var(--padding-s);
+    height: 100%;
+    padding: 0 var(--padding-s);
     background-color: var(--cor-de-fundo-footer);
     color: var(--cor-de-fundo-input);
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-family: var(--fonte-texto);
     font-weight: 700;
 }

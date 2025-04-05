@@ -11,6 +11,7 @@
     width: 282px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .poster__container {
@@ -35,6 +36,11 @@
 .poster__movie-row {
     display: flex;
     justify-content: space-between;
+}
+
+.poster__movie-type,
+.poster__movie-duration {
+    align-self: center;
 }
 
 .poster__movie-dimension {

@@ -1,4 +1,5 @@
 .separator {
     background-image: url(../images/tarjeta.png);
+    border: none;
     height: 64px;
 }
